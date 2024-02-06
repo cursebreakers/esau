@@ -1,0 +1,286 @@
+* {
+    font-family: 'dm-sans', 'courier', 'monospace';
+    background-color: azure;
+    color: #111111;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+
+@font-face {
+    font-family: 'dm-sans';
+    src: url(./font/dmsans.ttf);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* This ensures the body takes at least the height of the viewport */
+    margin: 0; /* Reset default margin */
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px;
+    background-color: #111111;
+    border: 1px solid #111111;
+}
+
+.navLnk {
+    width: 33vw;
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+    padding: 12px;
+    text-decoration: none;
+    border-bottom: 1px solid #111111;
+    transition-property: background-color;
+    transition-duration: 180ms;
+    transition-timing-function: ease-in;
+}
+
+.navLnk:hover {
+    background-color: #111111;
+    color: azure;
+}
+
+header {
+    padding: 8px;
+}
+
+section {
+    width: 100vw;
+    margin: 0px;
+    flex: 1; /* Let the content area grow to fill available space */
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin: 0px;
+    margin-left: 1vw;
+    padding: 4px;
+}
+
+.tagline {
+    margin: 0px;
+    margin-left: 2vw;
+    padding: 4px;
+}
+
+#feed {
+    width: 98vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 8px;
+    justify-items: space-between;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #111111;
+    min-width: 270px;
+    max-width: 420px;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.more {
+    background-color: #111111;
+    color: azure;
+    padding: 8px;
+    text-decoration: none;
+    border: 1px solid #111111;
+    transition-property: background-color;
+    transition-duration: 180ms;
+    transition-timing-function: ease-in;
+    border-radius: 5px;
+}
+
+.more:hover {
+    background-color: aquamarine;
+    color: #111111;
+    border: 1px solid #111111;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thumbnail {
+    max-width: 175px;
+    border-radius: 69%;
+    border: #111111;
+}
+
+.blogPost {
+    max-width: 59vw;
+}
+
+.timestamp {
+    font-style: italic;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeBtn {
+    display: block;
+    min-width: 222px;
+    min-height: 222px;
+    background-image: url(./img/noun-storm.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bottomBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111111;
+    color: azure;
+    margin: 0px;
+    padding: 4px;
+}
+
+.appTag {
+    background-color: #111111;
+    color: azure;
+    margin-right: 8px;
+}
+
+.policyLnk {
+    background-color: #111111;
+    color: azure;
+    margin-left: 8px; 
+}
+
+
+::selection {
+    background-color: aquamarine;
+    color: #111111;
+}
+
+::-moz-selection {
+    background-color: aquamarine;
+    color: #111111;
+}
+
+
+@media (min-width: 1230px) {
+    #feed {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 920px) and (max-width: 1229px) {
+    #feed {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 620px) and (max-width: 900px) {
+    #feed {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 619px) {
+    #feed {
+        display: flex;
+        flex-direction: column;
+        justify-items: space-between;
+        align-items: center;
+    }
+}
+
+
+.dark-mode * {
+    background-color: #111111;
+    color: azure;
+}
+
+.dark-mode body {
+    background-color: #111111;
+    color: azure;   
+}
+
+.dark-mode .navLnk {
+    border-bottom: 1px solid azure;
+
+}
+
+.dark-mode .navLnk:hover {
+    background-color: aquamarine;
+    color: #111111;
+}
+
+.dark-mode .post {
+    border-color: azure;
+}
+
+.dark-mode .more {
+    background-color: azure;
+    color: #111111;
+    padding: 8px;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 180ms;
+    transition-timing-function: ease-in;
+}
+
+.dark-mode .more:hover {
+    background-color: aquamarine;
+    color: #111111;
+}
+
+.dark-mode .homeBtn {
+    display: block;
+    min-width: 200px;
+    min-height: 200px;
+    background-image: url(./img/logo-white.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.dark-mode ::selection {
+    background-color: aquamarine;
+    color: #111111;
+}
+
+.dark-mode ::-moz-selection {
+    background-color: aquamarine;
+    color: #111111;
+}
