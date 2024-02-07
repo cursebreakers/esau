@@ -76,10 +76,9 @@ if (window.matchMedia) {
 // Function to toggle dark mode
 function toggleDarkMode() {
     const body = document.body;
-    body.classList.toggle('dark-mode');
+    const isDarkMode = body.classList.toggle('dark-mode');
 
     // Save preference to localStorage
-    const isDarkMode = body.classList.contains('dark-mode');
     localStorage.setItem('darkMode', isDarkMode);
 
     const toggleButton = document.getElementById('themeToggle');
@@ -93,7 +92,7 @@ function applyDarkModePreference() {
     // Check if user has a dark mode preference stored in localStorage
     if (isDarkModeCookie) {
         document.body.classList.add('dark-mode');
-        console.log('Loading preferences: Dark mode from cookie');
+        console.log('Loading preferences: isDarkMode cookie?', isDarkModeCookie);
     } else {
         const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
         console.log('Device prefers dark mode:', prefersDarkMode);
