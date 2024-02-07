@@ -82,9 +82,15 @@ function applyDarkModePreference() {
     if (isDarkMode) {
         document.body.classList.add('dark-mode');
         console.log('Loading preferences: isDarkMode?', isDarkMode);
+
+        const toggleButton = document.getElementById('themeToggle');
+        toggleButton.innerHTML = isDarkMode ? 'Light Mode' : 'Dark Mode';
     }
     else 
     console.log('Loading preferences: isDarkMode?', isDarkMode);
+
+    const toggleButton = document.getElementById('themeToggle');
+    toggleButton.innerHTML = isDarkMode ? 'Light Mode' : 'Dark Mode';
 }
 
 // Call the hello world.

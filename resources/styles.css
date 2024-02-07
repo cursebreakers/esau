@@ -275,6 +275,10 @@ footer {
     background-position: center;
 }
 
+.dark-mode .bottomBar {
+    border-top: 1px solid azure;
+}
+
 .dark-mode ::selection {
     background-color: aquamarine;
     color: #111111;
