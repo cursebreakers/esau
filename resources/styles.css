@@ -22,9 +22,22 @@ body {
     margin: 0; /* Reset default margin */
 }
 
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p, li {
+    font-size: 16px
+}
+
 nav {
     display: flex;
     justify-content: space-evenly;
+    font-size: 16px;
     margin: 0px;
     background-color: #111111;
     border: 1px solid #111111;
