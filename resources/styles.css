@@ -135,6 +135,10 @@ section {
     border: #111111;
 }
 
+.contactList {
+    list-style-type: none;
+}
+
 .blogPost {
     max-width: 61vw;
 }
@@ -195,6 +199,10 @@ footer {
     color: #111111;
 }
 
+#banner {
+    padding: 12px;
+    border: 2px solid
+}
 
 @media (min-width: 1230px) {
     #feed {
@@ -233,16 +241,16 @@ footer {
 
 .dark-mode * {
     background-color: #111111;
-    color: azure;
+    color: antiquewhite;
 }
 
 .dark-mode body {
     background-color: #111111;
-    color: azure;   
+    color: antiquewhite;   
 }
 
 .dark-mode .navLnk {
-    border-bottom: 1px solid azure;
+    border-bottom: 1px solid antiquewhite;
 
 }
 
@@ -252,11 +260,11 @@ footer {
 }
 
 .dark-mode .post {
-    border-color: azure;
+    border-color: antiquewhite;
 }
 
 .dark-mode .more {
-    background-color: azure;
+    background-color: antiquewhite;
     color: #111111;
     padding: 8px;
     text-decoration: none;
@@ -280,7 +288,7 @@ footer {
 }
 
 .dark-mode .bottomBar {
-    border-top: 1px solid azure;
+    border-top: 1px solid antiquewhite;
 }
 
 .dark-mode ::selection {

@@ -38,11 +38,11 @@ function cookiePower() {
     const banner = document.createElement('div')
     banner.id = 'banner'
     banner.innerHTML = `
-        <h3>Privacy Notice</h3>
-        <p>This site may employ cookies to improve user experience. By continuing to browse this site, you agree to the terms of use.</p>
-        <a href="./policy.html">Read terms</a>
+        <h3>Privacy Notice:</h3>
+        <p>This site may employ cookies to improve user experience. By proceeding, you agree to the privacy policy and terms of use.</p>
         <button id="ackGDPR">OK</button>
         <button id="gdprRequired">Required cookies only</button>
+        <a href="./policy.html">Read terms</a>
     `
     page.insertBefore(banner, nav)
 
@@ -61,6 +61,16 @@ function cookiePower() {
         // Hide banner
         banner.style.display = 'none';
     });
+}
+
+if (window.matchMedia) {
+    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    console.log('Device prefers dark mode:', prefersDarkMode);
+    
+    if (prefersDarkMode) {
+        document.body.classList.add('dark-mode');
+    }
 }
 
 // Function to toggle dark mode
