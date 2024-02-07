@@ -1,14 +1,7 @@
 // Page engine JS
 
-
-// Make a quick a hello world for a warmup
-function hello(message) {
-    console.log(message);
-}
-
 // Create a GDPR banner and cookie handler
 function cookiePower() {
-    console.log('rendering cookie banner')
 
     function saveUserPreference(preference) {
         // Save user preference in localStorage
@@ -28,7 +21,6 @@ function cookiePower() {
         // Check if user preference is already saved
     if (isUserPreferenceSaved()) {
         // If user preference is saved, return without showing the banner
-        console.log('User preference detected. Cookie banner not displayed.');
         return;
     }
     
@@ -105,9 +97,6 @@ function applyDarkModePreference() {
     toggleButton.innerHTML = isDarkMode ? 'Light Mode' : 'Dark Mode';
 }
 
-// Call the hello world.
-hello("Hello World!");
-
 // Call the cookie banner
 cookiePower();
 
@@ -117,3 +106,4 @@ applyDarkModePreference();
 const toggleButton = document.getElementById('themeToggle');
 
 toggleButton.addEventListener('click', toggleDarkMode);
+
