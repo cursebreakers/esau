@@ -68,8 +68,11 @@ if (window.matchMedia) {
 
     console.log('Device prefers dark mode:', prefersDarkMode);
     
-    if (prefersDarkMode) {
-        document.body.classList.add('dark-mode');
+    if (!localStorage.getItem('darkMode')) {
+        // Add 'dark-mode' class only if device prefers dark mode
+        if (prefersDarkMode) {
+            document.body.classList.add('dark-mode');
+        }
     }
 }
 
@@ -87,25 +90,19 @@ function toggleDarkMode() {
 
 // Check and apply dark mode preference on page load
 function applyDarkModePreference() {
-    const isDarkModeCookie = localStorage.getItem('darkMode') === 'true';
-
-    // Check if user has a dark mode preference stored in localStorage
-    if (isDarkModeCookie) {
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    if (isDarkMode) {
         document.body.classList.add('dark-mode');
-        console.log('Loading preferences: isDarkMode cookie?', isDarkModeCookie);
-    } else {
-        const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        console.log('Device prefers dark mode:', prefersDarkMode);
+        console.log('Loading preferences: isDarkMode?', isDarkMode);
 
-        // Check if device prefers dark mode and user hasn't set a preference
-        if (prefersDarkMode && !isDarkModeCookie) {
-            document.body.classList.add('dark-mode');
-            console.log('Loading preferences: Dark mode from device');
-        }
+        const toggleButton = document.getElementById('themeToggle');
+        toggleButton.innerHTML = isDarkMode ? 'Light Mode' : 'Dark Mode';
     }
+    else 
+    console.log('Loading preferences: isDarkMode?', isDarkMode);
 
     const toggleButton = document.getElementById('themeToggle');
-    toggleButton.innerHTML = isDarkModeCookie ? 'Light Mode' : 'Dark Mode';
+    toggleButton.innerHTML = isDarkMode ? 'Light Mode' : 'Dark Mode';
 }
 
 // Call the hello world.
