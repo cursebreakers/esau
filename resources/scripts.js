@@ -31,7 +31,7 @@ function cookiePower() {
     banner.id = 'banner'
     banner.innerHTML = `
         <h3>Privacy Notice:</h3>
-        <p>This site may employ cookies to improve user experience. By proceeding, you agree to the privacy policy and terms of use.</p>
+        <p>This site employs cookies to improve user experience. By proceeding, you agree to the privacy policy and terms of use.</p>
         <button id="ackGDPR">OK</button>
         <button id="gdprRequired">Required cookies only</button>
         <a href="./policy.html">Read terms</a>

@@ -253,23 +253,27 @@ footer {
 }
 
 .dark-mode * {
-    background-color: #111111;
+    background-color: #161313;
     color: antiquewhite;
 }
 
 .dark-mode body {
-    background-color: #111111;
+    background-color: #161313;
     color: antiquewhite;   
+}
+
+nav {
+    background-color: #161313;
 }
 
 .dark-mode .navLnk {
     border-bottom: 1px solid antiquewhite;
-
+    background-color: #161313;
 }
 
 .dark-mode .navLnk:hover {
     background-color: aquamarine;
-    color: #111111;
+    color: #161313;
 }
 
 .dark-mode .post {
@@ -278,7 +282,7 @@ footer {
 
 .dark-mode .more {
     background-color: antiquewhite;
-    color: #111111;
+    color: #161313;
     padding: 8px;
     text-decoration: none;
     transition-property: background-color;
@@ -288,7 +292,7 @@ footer {
 
 .dark-mode .more:hover {
     background-color: aquamarine;
-    color: #111111;
+    color: #161313;
 }
 
 .dark-mode .homeBtn {
@@ -302,14 +306,15 @@ footer {
 
 .dark-mode .bottomBar {
     border-top: 1px solid antiquewhite;
+    background-color: #161313;
 }
 
 .dark-mode ::selection {
     background-color: aquamarine;
-    color: #111111;
+    color: #161313;
 }
 
 .dark-mode ::-moz-selection {
     background-color: aquamarine;
-    color: #111111;
+    color: #161313;
 }
