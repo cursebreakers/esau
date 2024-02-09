@@ -293,7 +293,7 @@ nav {
     border-color: antiquewhite;
 }
 
-.dark-mode .more {
+.dark-mode .btn {
     background-color: antiquewhite;
     color: #161313;
     padding: 8px;
@@ -303,7 +303,7 @@ nav {
     transition-timing-function: ease-in;
 }
 
-.dark-mode .more:hover {
+.dark-mode .btn:hover {
     background-color: aquamarine;
     color: #161313;
 }
