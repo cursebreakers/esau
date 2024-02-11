@@ -263,6 +263,14 @@ footer {
     .blogPost {
         max-width: 80vw;
     }
+    
+    .resources {
+        padding: 24px ;
+    }
+
+    .projects {
+        padding: 24px ;
+    }
 }
 
 .dark-mode * {

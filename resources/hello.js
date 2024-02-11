@@ -10,4 +10,3 @@ function hello(message) {
 }
 
 hello("Hello World!");
-
