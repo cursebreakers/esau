@@ -63,12 +63,6 @@ nav {
     color: azure;
 }
 
-.navLnk:active {
-    background-color: hotpink;
-    color: #000;
-    transition-duration: 80ms;
-}
-
 header {
     padding: 8px;
 }
@@ -131,14 +125,6 @@ section {
 .btn:hover {
     background-color: aquamarine;
     color: #111111;
-}
-
-.btn:active {
-    background-color: hotpink;
-    color: #111111;
-    border: 1px solid #111111;
-    transition-timing-function: ease-out;
-    transition-duration: 100ms;
 }
 
 #info {
