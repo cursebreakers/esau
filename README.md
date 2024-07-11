@@ -1,13 +1,56 @@
+# Meditations - Overview
+.
+├── blog
+│   ├── meditations.html
+│   └── phase0.html
+├── hello.html
+├── index.html
+├── info.html
+├── policy.html
+├── projects.html
+├── reading.html
+├── README.md
+├── resources
+│   ├── font
+│   │   └── dmsans.ttf
+│   ├── hello.js
+│   ├── img
+│   │   ├── esau.jpg
+│   │   ├── noun-storm.svg
+│   │   └── storm-white.svg
+│   ├── scripts.js
+│   ├── styles.css
+│   └── template.html
+└── resources.html
 
-Website: "Meditations by Esau" published February 7, 2024
+4 directories, 18 files
 
-Photo credits: 
+---
+
+**Credits:**
+
+Website: "Meditations by Esau"
+
+Author: Esau Gavett @[Cursebreakers LLC](https://cursebreakers.net)
+
 Info page, profile picture: by Esau Gavett, 2021
 
 Logo from The Noun Project https://thenounproject.com/
 Font is DM Sans by Google Fonts https://fonts.google.com/specimen/DM+Sans
 
-Content may be shared/transported away from this site with appropriate credit. Some content may have its own intellectual property rights to consider when sharing. To avoid any confilct or confusion, always pay proper respects to the creators of any shared content.
+Content may be shared from this site with appropriate credit. Some content may have its own intellectual property rights to consider when sharing. To avoid any confilct or confusion, always pay proper respects to the creators of any shared content.
 
-Bibliography: (Under Construction)
-- List of sources cited or quoted on this page.
+---
+
+## WORKING/FUTURE UPDATES:
+
+- Bibliography: *(Under Construction)*
+  - List of sources cited or quoted on this page.
+
+- Markdown rendering for blog posts *(Under Construction)*
+
+- RSS/XML *(Under Construction)*
+
+---
+
+Published: February 7, 2024 | Last update: July 11, 2024
