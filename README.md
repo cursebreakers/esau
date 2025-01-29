@@ -1,29 +1,8 @@
 # Meditations - Overview
-.
-├── blog
-│   ├── meditations.html
-│   └── phase0.html
-├── hello.html
-├── index.html
-├── info.html
-├── policy.html
-├── projects.html
-├── reading.html
-├── README.md
-├── resources
-│   ├── font
-│   │   └── dmsans.ttf
-│   ├── hello.js
-│   ├── img
-│   │   ├── esau.jpg
-│   │   ├── noun-storm.svg
-│   │   └── storm-white.svg
-│   ├── scripts.js
-│   ├── styles.css
-│   └── template.html
-└── resources.html
 
-4 directories, 18 files
+Blog by Esau Gavett
+
+[on GitHub Pages](https://cursebreakers.github.io/esau)
 
 ---
 
